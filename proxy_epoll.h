@@ -1,5 +1,6 @@
 #ifndef PROXY_EPOLL
 #define PROXY_EPOLL
+// write by Daniel 
 /*
 * 功能：将普通进程改造成守护进程
 * 参数：listenfd为服务器监听套接子 
@@ -19,8 +20,9 @@ int set_socket_noblock(int fd);
 int connect_isolate(int usersockfd, char *argv[]);
 
 /*
-* 功能：
-* 参数：
+* 功能：代理服务器主题部分，创建代理服务器，并且利用epoll模型进行相应的事件处理。
+* 参数： proxy_port:代理服务端口 argv:main函数传进来关于
+        远程主机地址及其服务端口信息
 */
 void proxy(int proxy_port, char *argv[]);
 
