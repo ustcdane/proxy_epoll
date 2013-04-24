@@ -1,12 +1,11 @@
-
 // proxy_epoll源代码分析——谈谈如何学习Linux网络编程
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-#include <syslog.h>
-/* syslog定义*/#include <sys/types.h>
+#include <syslog.h>/* syslog定义*/
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/socket.h>
 #include <sys/epoll.h>
