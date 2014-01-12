@@ -1,4 +1,4 @@
-provides proxy tcp service for a host on an isolated network base on epoll model
+provides proxy tcp service for a host on an isolated network base on epoll model.
 
 编程实现一个代理服务器，基于epoll 模型的网络编程。 开发平台 linux, 编译器g++
 
